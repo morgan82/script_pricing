@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generatescript.iml" filepath="$PROJECT_DIR$/.idea/modules/generatescript.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generatescript_main.iml" filepath="$PROJECT_DIR$/.idea/modules/generatescript_main.iml" group="generatescript" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/generatescript_test.iml" filepath="$PROJECT_DIR$/.idea/modules/generatescript_test.iml" group="generatescript" />
+    </modules>
+  </component>
+</project>
