@@ -12,6 +12,7 @@ import java.util.Iterator;
 
 public class GenerateScript {
 
+
     public static void main(String[] args) {
 
         if (args.length != 3) {
@@ -35,7 +36,7 @@ public class GenerateScript {
 
         String queryTemp = "insert into DTV_PRICE_PRODUCT values(PRICE_PRODUCT_SEQ.NEXTVAL,\n" +
                 "                (select id from DTV_PRICE_CUSTOMER where DESCRIPTION ='{CUSTOMER}'),\n" +
-                "                (select id from DTV_PRICE_IBS_PRODUCTS where UPPER(DESCRIPTION) = '{PRODUCT}' and COUNTRY=(select CODE from DTV_PRICE_COUNTRIES where CODE='{COUNTRY}')),\n" +
+                "                (select id from DTV_PRICE_IBS_PRODUCTS where UPPER(DESCRIPTION) = UPPER('{PRODUCT}') and COUNTRY=(select CODE from DTV_PRICE_COUNTRIES where CODE='{COUNTRY}')),\n" +
                 "                '{PRICE}',\n" +
                 "                (select id from DTV_PRICE_COUNTRIES where CODE='{COUNTRY}'),\n" +
                 "                1);\n";
@@ -222,4 +223,5 @@ public class GenerateScript {
             throw new RuntimeException(e);
         }
     }
+
 }
